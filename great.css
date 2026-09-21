@@ -381,13 +381,16 @@ h2{
 
 .form input[type="text"],
 .form input[type="email"],
-.form textarea{
+.form input[type="tel"],
+.form textarea,
+.form select{
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 8px;
     box-sizing: border-box;
 }
+
 .form textarea{
     resize: none;
 }
