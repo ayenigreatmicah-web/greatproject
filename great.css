@@ -261,7 +261,7 @@ header .container .menu-icon .mobile ul{
 @media screen and (min-width: 751px) and (max-width: 1200px){
 
     .pro .container{
-        display: flex;
+        display: column;
         align-items: center;
         flex-wrap: wrap;
         gap: 30px;
