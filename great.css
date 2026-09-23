@@ -38,6 +38,7 @@ header .container{
 
 header .container ul{
     display: flex;
+    align-items: center;
     font-size: 20px;
     height: 85px;
     font-weight: bold;;
@@ -76,7 +77,7 @@ header .container ul li a{
 }
 
 .hero .container h1{
-    font-size: 3rem;
+    font-size: 4rem;
     font-style: oblique;
     color: rgba(87, 2, 2, 0.719);
     text-transform: capitalize;
@@ -96,9 +97,10 @@ header .container ul li a{
 
 .hero .container a{
     background-color: rgb(101, 11, 11);
-    padding: 15px 28px;
+    padding: 10px;
     border-radius: 15px;
     color: white;
+    font-size: 2rem;
 }
 
 .about{
@@ -137,6 +139,27 @@ header .container ul li a{
     border-radius: 20%;
 }
 
+.skills .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 50px;
+    gap: 80px;
+}
+
+/* .skills{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                      url("Images/pexels-2.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 100px 30px;
+    color: aqua;
+    text-align: center;
+} */
+
 .pro{
     width: 100%;
 }
@@ -154,16 +177,17 @@ header .container ul li a{
 
 .pro .container .products p{
     position: absolute;
-    top: 20px;
-    left: 0.5px;
+    top: 90px;
+    left: 60px;
     color:white;
     padding: 30px;
     background-color: rgb(101, 11, 11);
     color: aqua;
     margin: 20px;
+    align-items: center;
 }
 
-.pro .container .products .price{
+/* .pro .container .products .price{
     position: absolute;
     bottom: 30px;
     color: aqua;
@@ -178,7 +202,7 @@ header .container ul li a{
     color: aqua;
     padding: 8px 16px;
     border-radius: 20px;
-}
+} */
 
 
 @media screen and (max-width: 750px){
@@ -241,6 +265,26 @@ header .container ul li a{
     .pro .container .products{
         width: 100%;
     }
+@media screen and (max-width:750px){
+
+    .form-container{
+        width:90%;
+        margin:30px auto;
+        padding:20px;
+        flex-direction:column;
+        gap:30px;
+    }
+
+    .form-image{
+        width:100%;
+    }
+
+    .form{
+        width:100%;
+        padding:20px;
+    }
+
+}
 
 }
 
@@ -293,6 +337,90 @@ header .container .menu-icon .mobile ul{
     .hero .container p{
         font-size: 20px;
     }
+
+}
+
+@media screen and (max-width: 700px){
+    header .container h2{
+        font-size: 20px;
+    }
+
+    .hero .container h1{
+        font-size: 1.4rem;
+    }
+
+    .hero .container p{
+        font-size: 15px;
+        padding: 25px 0;
+    }
+
+    .about .container .right{
+        font-size: 16px;
+    }
+
+    .pro .container{
+        padding: 25px 15px;
+    }
+
+    header .container .mobile{
+    display: none;
+}
+header .container .mobile ul{
+    display: none;
+}
+
+header .container .menu-icon .mobile ul{
+    display: contents;
+    font-size: 25px;
+    color: aqua;
+    cursor: pointer;
+}
+
+.form-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 30px;
+    background-color: yellow;
+}
+.form-container .form-image{
+    width: 100%;
+}
+.form{
+    width: 100%;
+    padding: 20px;
+    margin: 20px 0;
+}
+.form-container .form{
+    width: 100%;
+    padding: 0px;
+}
+
+.form-image{
+    width: 100%;
+}
+form{
+    width: 100%;
+    /* background-color: yellow; */
+}
+
+.form-container .form form{
+    width: 100%;
+    padding: 20px;
+    padding: 0px;
+    /* background-color: green; */
+}
+
+
+.form-image img{
+    height: 300px;
+}
+
+.form-buttons{
+   display: flex;
+   gap: 25px;
+}
 
 }
 
@@ -362,8 +490,8 @@ h2{
 }
 
 .form{
-    width: 50%;
-    padding: 30px;
+    width: 100%;
+    padding: 20px;
     background-color: #f5f5f5;
     border-radius: 15px;
 }
@@ -395,6 +523,13 @@ h2{
     resize: none;
 }
 
+
+.form-buttons{
+    padding: 20px;
+   display: flex;
+   gap: 25px;
+   margin-top: 15px;
+}
 .form input[type="reset"],
 .form input[type="submit"]{
     padding: 12px 25px;
@@ -413,6 +548,7 @@ h2{
     background-color: red;
     color: white;
 }
+
 footer{
     background-color: rgb(101, 11, 11);
     color: white;
